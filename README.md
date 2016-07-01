@@ -94,7 +94,8 @@ Important links
 
 
 
-#Jithey tk mainu lgda sanu aah sab use kerna paina 
+#Summary
+Jithey tk mainu lagda sanu aah sab use kerna pau.  
 1. Rails Offline/HTML5 cache. 
 2. Application Cache interface(API). 
 3. Local storage Javascript library
