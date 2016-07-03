@@ -12,7 +12,8 @@ Vist this link carefully this is crowdy one. https://html.spec.whatwg.org/#appli
 The App cache allows you to specify that the browser should cache certain files, and ensure that the user can access them if the device is offline 
 You specify an application’s cache with a new manifest attribute on the html element, which must point at a location on the web that serves the manifest. A manifest looks something like this:
 
-```CACHE MANIFEST
+```
+CACHE MANIFEST
 
 javascripts/application.js
 javascripts/jquery.js
@@ -43,7 +44,8 @@ Browser can offer different type of storage using this api
 In combination with App cache you can use Local storage to store data on the device making it possible to show stale data to your users even if no connnection is available. 
 
 For example basic stratergy 
-```jQuery(function($) {
+```
+jQuery(function($) {
   // Declare a function that can take a JS object and
   // populate our HTML. Because we used the App Cache
   // the HTML will be present regardless of online status
