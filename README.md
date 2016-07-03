@@ -19,7 +19,8 @@ javascripts/jquery.js
 images/masthead.png
 
 NETWORK:
-/```
+/
+```
 
 this specifies that the browser should cache the three files immediately following CACHE MANIFEST, and require a network connection for all other URL's 
 
