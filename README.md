@@ -1,11 +1,10 @@
 #HTML5 online
-This provide two robust offline capabilities. 
 ## Rack offline
 The easiest way to use Rack::Offline is by using Rails::Offline in a Rails application.
 In your router write: 
 match "/application.manifest"=> Rails::Offline
 
-##Application cache
+###Application cache
 HTML5 addresses some of the annoyances of being offline with the ApplicationCache interface. 
 Application Cache is generally a API 
 Vist this link carefully this is crowdy one. https://html.spec.whatwg.org/#applicationcache.
@@ -39,7 +38,16 @@ briefly m ds ta :) kuch naa samaj aaye tan push leyo.
 Browser that support app cache can also support Local storage 
 This is a javascript api to store extremly simple key-value store
 
+With local storage, web applications can store data locally within the user's browser.
+
+Before HTML5, application data had to be stored in cookies, included in every server request. Local storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+
+Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.
+
+Local storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data.
 Browser can offer different type of storage using this api 
+
+http://www.webdesignerdepot.com/2013/04/how-to-use-local-storage-for-javascript/
 
 In combination with App cache you can use Local storage to store data on the device making it possible to show stale data to your users even if no connnection is available. 
 
