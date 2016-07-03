@@ -12,14 +12,14 @@ Vist this link carefully this is crowdy one. https://html.spec.whatwg.org/#appli
 The App cache allows you to specify that the browser should cache certain files, and ensure that the user can access them if the device is offline 
 You specify an application’s cache with a new manifest attribute on the html element, which must point at a location on the web that serves the manifest. A manifest looks something like this:
 
-*CACHE MANIFEST
+```CACHE MANIFEST
 
 javascripts/application.js
 javascripts/jquery.js
 images/masthead.png
 
 NETWORK:
-/*
+/```
 
 this specifies that the browser should cache the three files immediately following CACHE MANIFEST, and require a network connection for all other URL's 
 
@@ -42,7 +42,7 @@ Browser can offer different type of storage using this api
 In combination with App cache you can use Local storage to store data on the device making it possible to show stale data to your users even if no connnection is available. 
 
 For example basic stratergy 
-'''jQuery(function($) {
+```jQuery(function($) {
   // Declare a function that can take a JS object and
   // populate our HTML. Because we used the App Cache
   // the HTML will be present regardless of online status
@@ -51,14 +51,14 @@ For example basic stratergy
     localStorage.articles = JSON.stringify(object);
     $("#article-list").html(template.render(object));
   }
-'''
+
   // Create a flag so we don't poll the server twice
   // at once
- '''var updating = false;'''
+ var updating = false;
 
   // Create a function that will ask the server for
   // updates to the article list
- ''' var remoteUpdate = function() {
+ var remoteUpdate = function() {
     // Don't ping the server again if we're in the
     // process of updating
     if(updating) return;
@@ -86,7 +86,7 @@ For example basic stratergy
   // If the user is online, ask for updates now
   if(window.navigator.onLine) remoteUpdate();
 })
-'''
+```
 Important links 
 
 * railscasts.com/episodes/247-offline-apps-part-1
