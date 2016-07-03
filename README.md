@@ -19,7 +19,7 @@ javascripts/jquery.js
 images/masthead.png
 
 NETWORK:
-/
+/*
 
 this specifies that the browser should cache the three files immediately following CACHE MANIFEST, and require a network connection for all other URL's 
 
@@ -27,7 +27,7 @@ Note:- It will not flush the cache unless the user specifically asks browser to 
 
 Also you can use the Updateready event to display a notice to the user that the version of the HTML they are using is out of date.
 
-for more details go to *https://github.com/wycats/rack-offline
+for more details go to https://github.com/wycats/rack-offline
 
 briefly m ds ta :) kuch naa samaj aaye tan push leyo.
 
@@ -42,7 +42,7 @@ Browser can offer different type of storage using this api
 In combination with App cache you can use Local storage to store data on the device making it possible to show stale data to your users even if no connnection is available. 
 
 For example basic stratergy 
-jQuery(function($) {
+'''jQuery(function($) {
   // Declare a function that can take a JS object and
   // populate our HTML. Because we used the App Cache
   // the HTML will be present regardless of online status
@@ -51,14 +51,14 @@ jQuery(function($) {
     localStorage.articles = JSON.stringify(object);
     $("#article-list").html(template.render(object));
   }
-
+'''
   // Create a flag so we don't poll the server twice
   // at once
-  var updating = false;
+ '''var updating = false;'''
 
   // Create a function that will ask the server for
   // updates to the article list
-  var remoteUpdate = function() {
+ ''' var remoteUpdate = function() {
     // Don't ping the server again if we're in the
     // process of updating
     if(updating) return;
@@ -86,16 +86,18 @@ jQuery(function($) {
   // If the user is online, ask for updates now
   if(window.navigator.onLine) remoteUpdate();
 })
-
+'''
 Important links 
-1. railscasts.com/episodes/247-offline-apps-part-1
-2. http://www.rubydoc.info/gems/rack-offline/0.6.4
-3. www.html5rocks.com/en/tutorials/appcache/beginner/
+
+* railscasts.com/episodes/247-offline-apps-part-1
+* http://www.rubydoc.info/gems/rack-offline/0.6.4
+* www.html5rocks.com/en/tutorials/appcache/beginner/
 
 
 
-#Summary
+##Summary
 Jithey tk mainu lagda sanu aah sab use kerna pau.  
+
 1. Rails Offline/HTML5 cache. 
 2. Application Cache interface(API). 
 3. Local storage Javascript library
