@@ -103,7 +103,7 @@ Important links
 * railscasts.com/episodes/247-offline-apps-part-1
 * http://www.rubydoc.info/gems/rack-offline/0.6.4
 * www.html5rocks.com/en/tutorials/appcache/beginner/
-
+* http://stackoverflow.com/questions/14518737/rack-offline-gem-where-is-the-resulting-manifest-file
 
 
 ##Summary
