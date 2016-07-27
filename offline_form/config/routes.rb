@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
   resources :books
-  match "/application.manifest"=>Rails::Offline,:via=>[:get], :as=> :manifest
+ root "books#index"
+offline = Rack::Offline.configure  do 
+
+cache ActionController::Base.helpers.asset_path("application.css")
+cache ActionController::Base.helpers.asset_path("application.js")
+network "/"
+
+end
+get "/application.manifest" => offline
+ #match "/application.manifest"=>Rails::Offline,:via=>[:get], :as=> :manifest
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

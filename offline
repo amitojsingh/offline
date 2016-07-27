@@ -1,0 +1,32 @@
+Sprockets provides you with one by default.
+
+in one of your environment configs (/config/environments/development.rb)
+
+config.assets.compress = false
+config.assets.debug = false
+
+and in your html file:
+
+<html manifest="manifest.yml">
+
+running
+
+rake:precompile 
+
+will give you a manifest file to public/assets/manifest.yml
+
+http://stackoverflow.com/questions/7825768/cache-manifest-with-asset-pipeline
+
+https://launchschool.com/blog/rails-asset-pipeline-best-practices
+
+https://grails.org/plugin/asset-pipeline
+
+gulp with rails http://blog.bugsnag.com/replacing-the-rails-asset-pipeline-with-gulp
+
+http://coderberry.me/blog/2012/04/24/asset-pipeline-for-dummies/
+
+https://devcenter.heroku.com/articles/rails-asset-pipeline
+
+http://documentcloud.github.io/jammit/
+
+https://www.sitepoint.com/creating-offline-html5-apps-with-appcache/

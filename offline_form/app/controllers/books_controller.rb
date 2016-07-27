@@ -1,6 +1,8 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
+  #caches_page   :book
+  caches_page :show, :new, :index, :show, :new, :edit
   # GET /books
   # GET /books.json
   def index
